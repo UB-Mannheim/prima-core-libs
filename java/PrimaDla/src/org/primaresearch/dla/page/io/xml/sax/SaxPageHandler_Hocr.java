@@ -316,7 +316,7 @@ public class SaxPageHandler_Hocr extends SaxPageHandler {
 						image = part.substring(part.lastIndexOf(File.separator)+1);
 					// No path
 					else if (part.contains(" \""))
-						image = part.substring(part.indexOf(" \"")+1);
+						image = part.substring(part.indexOf(" \"")+2);
 
 					if (image != null) {
 						//Remove quotation mark
